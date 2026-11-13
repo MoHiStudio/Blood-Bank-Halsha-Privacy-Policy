@@ -4,161 +4,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#b91c1c">
-  <title>Delete Account - Blood Bank Halsha</title>
+  <meta name="theme-color" content="#b42332">
+
+  <title>Delete Account | Blood Bank Halsha</title>
+
+  <meta name="description" content="Request deletion of your Blood Bank Halsha account and associated personal data.">
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 24px 16px;
+      padding: 30px 16px;
       font-family: Arial, sans-serif;
-      background: #f8fafc;
-      color: #1f2937;
-      line-height: 1.6;
+      background: #f5f6f8;
+      color: #252525;
+      line-height: 1.7;
     }
+
     .container {
-      max-width: 650px;
+      max-width: 700px;
       margin: 35px auto;
+      padding: 35px;
       background: #fff;
-      padding: 30px;
       border-radius: 16px;
-      box-shadow: 0 5px 25px rgba(0,0,0,.08);
+      box-shadow: 0 5px 25px rgba(0,0,0,.06);
     }
+
+    header {
+      text-align: center;
+      border-bottom: 3px solid #b42332;
+      padding-bottom: 22px;
+      margin-bottom: 25px;
+    }
+
     .logo {
-      text-align: center;
-      font-size: 48px;
-    }
-    h1 {
-      text-align: center;
-      color: #b91c1c;
-      margin-bottom: 8px;
-    }
-    .subtitle {
-      text-align: center;
-      color: #64748b;
-      margin-bottom: 28px;
-    }
-    label {
-      display: block;
-      font-weight: bold;
-      margin: 15px 0 6px;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 13px;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-    textarea { min-height: 100px; resize: vertical; }
-    button {
-      width: 100%;
-      margin-top: 22px;
-      padding: 15px;
-      border: 0;
-      border-radius: 8px;
-      background: #b91c1c;
+      width: 65px;
+      height: 65px;
+      margin: auto;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #b42332;
       color: white;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
+      font-size: 32px;
     }
-    button:hover { background: #991b1b; }
+
+    h1 {
+      margin: 15px 0 5px;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      color: #666;
+    }
+
+    h2 {
+      font-size: 19px;
+      margin-top: 25px;
+    }
+
     .notice {
-      background: #fff7ed;
-      border-left: 4px solid #f59e0b;
-      padding: 13px;
-      border-radius: 6px;
+      background: #fff5f5;
+      border-left: 4px solid #b42332;
+      padding: 15px;
+      border-radius: 7px;
       margin: 20px 0;
     }
-    .footer {
+
+    .email-box {
+      margin: 25px 0;
+      padding: 22px;
       text-align: center;
-      margin-top: 25px;
-      color: #64748b;
-      font-size: 13px;
+      background: #fff5f5;
+      border: 1px solid #f0d0d3;
+      border-radius: 12px;
+    }
+
+    .email {
+      display: block;
+      font-size: 19px;
+      font-weight: bold;
+      color: #b42332;
+      overflow-wrap: anywhere;
+      margin: 12px 0;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 25px;
+      background: #b42332;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: #901b28;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media(max-width: 600px) {
+      .container {
+        padding: 23px 18px;
+        margin: 10px auto;
+      }
+
+      h1 {
+        font-size: 23px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<div class="container">
-  <div class="logo">🩸</div>
-  <h1>Delete Your Account</h1>
-  <p class="subtitle">Blood Bank Halsha</p>
+<main class="container">
+
+  <header>
+    <div class="logo">♥</div>
+    <h1>Delete Your Account</h1>
+    <div class="subtitle">Blood Bank Halsha</div>
+  </header>
 
   <p>
-    If you want to delete your Blood Bank Halsha account
-    and associated personal data, please submit the form below.
-    Our support team will review your request.
+    We respect your privacy and your right to control your personal
+    information. If you no longer wish to use Blood Bank Halsha,
+    you can request deletion of your account and associated personal data.
   </p>
 
   <div class="notice">
-    <strong>Important:</strong> Account deletion may permanently
-    remove your profile and associated personal information.
-    Some records may be retained where required by law or for
-    legitimate security purposes.
+    <strong>Important:</strong>
+    <p>
+      Sending an email is a request for account deletion. Your account
+      will not be deleted automatically. Our team will review your
+      request and contact you if additional verification is required.
+    </p>
   </div>
 
-  <form id="deleteForm">
-    <label for="name">Full Name</label>
-    <input id="name" type="text" required placeholder="Enter your full name">
+  <h2>How to Request Account Deletion</h2>
 
-    <label for="email">Registered Email Address</label>
-    <input id="email" type="email" required placeholder="Enter your account email">
+  <ol>
+    <li>Open your email application.</li>
+    <li>Use the email address associated with your Blood Bank Halsha account.</li>
+    <li>Send an account deletion request to our official support email.</li>
+    <li>Include your registered name and account email address.</li>
+    <li>Our team will review your request and process it according to our data deletion policy and applicable laws.</li>
+  </ol>
 
-    <label for="phone">Registered Mobile Number</label>
-    <input id="phone" type="tel" required placeholder="Enter your mobile number">
+  <div class="email-box">
+    <strong>Official Account Deletion Email</strong>
 
-    <label for="reason">Reason (Optional)</label>
-    <textarea id="reason" placeholder="Tell us why you want to delete your account"></textarea>
+    <span class="email">mohistudio95@gmail.com</span>
 
-    <button type="submit">Send Account Deletion Request</button>
-  </form>
+    <a class="button"
+       href="mailto:mohistudio95@gmail.com?subject=Blood%20Bank%20Halsha%20-%20Account%20Deletion%20Request&body=Hello%20MoHi%20Studio%2C%0A%0AI%20would%20like%20to%20request%20deletion%20of%20my%20Blood%20Bank%20Halsha%20account%20and%20associated%20personal%20data.%0A%0ARegistered%20Name%3A%20%0ARegistered%20Email%3A%20%0ARegistered%20Phone%20(Optional)%3A%20%0A%0APlease%20let%20me%20know%20if%20you%20need%20any%20additional%20verification.%0A%0AThank%20you.">
+      Send Deletion Request
+    </a>
+  </div>
+
+  <h2>What Data Will Be Deleted?</h2>
+
+  <p>Subject to applicable legal and security requirements, deletion may include:</p>
+
+  <ul>
+    <li>Account profile and personal information.</li>
+    <li>Donor profile and availability information.</li>
+    <li>Profile photo and associated personal data.</li>
+    <li>Account-related preferences and information.</li>
+  </ul>
+
+  <h2>Data That May Be Retained</h2>
 
   <p>
-    You can also contact our support team directly:
-    <a id="supportLink" href="mohistudio95@gmail.com">
-      YOUR_SUPPORT_EMAIL
-    </a>
+    Certain information may need to be retained for a limited period
+    where required by law, security, fraud prevention, dispute
+    resolution, or legitimate record-keeping requirements.
   </p>
 
-  <div class="footer">
-    © 2026 Blood Bank Halsha. All rights reserved.
-  </div>
-</div>
+  <h2>Need Help?</h2>
 
-<script>
-  // Replace this with your actual support email address.
-  const SUPPORT_EMAIL = "mohistudio95@gmail.com";
+  <p>
+    If you have questions about account deletion or your personal data,
+    contact our support team:
+  </p>
 
-  document.getElementById("supportLink").href =
-    "mailto:" + SUPPORT_EMAIL;
+  <p>
+    <strong>Email:</strong>
+    <a href="mailto:mohistudio95@gmail.com">mohistudio95@gmail.com</a>
+  </p>
 
-  document.getElementById("deleteForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+  <footer>
+    © 2026 MoHi Studio. All rights reserved.<br>
+    Blood Bank Halsha
+  </footer>
 
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const reason = document.getElementById("reason").value.trim();
-
-    const subject = "Account Deletion Request - Blood Bank Halsha";
-    const body =
-      "Hello Blood Bank Halsha Support Team,\n\n" +
-      "I would like to request deletion of my account and associated personal data.\n\n" +
-      "Full Name: " + name + "\n" +
-      "Registered Email: " + email + "\n" +
-      "Mobile Number: " + phone + "\n" +
-      "Reason: " + (reason || "Not provided") + "\n\n" +
-      "Please verify my request and let me know when the deletion is completed.\n\n" +
-      "Thank you.";
-
-    window.location.href =
-      "mailto:" + SUPPORT_EMAIL +
-      "?subject=" + encodeURIComponent(subject) +
-      "&body=" + encodeURIComponent(body);
-  });
-</script>
+</main>
 
 </body>
 </html>
